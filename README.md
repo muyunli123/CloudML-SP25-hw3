@@ -51,8 +51,6 @@ $ docker run -it mnist python main.py --epochs 1 --batch-size 32 --lr 0.1 --dry-
 ![Docker Layers 2](docker-layers-2.png)
 
 
----
-
 ## Observation and Comparison
 - The image size is relatively large (1.77 GB) due to installing dependencies like PyTorch
 - Layer inspection shows that the largest layer comes from the dependency installation process, and it also takes the majority of time in building the image (19.4s)
