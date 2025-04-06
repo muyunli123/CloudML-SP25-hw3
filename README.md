@@ -50,16 +50,6 @@ $ docker run -it mnist python main.py --epochs 1 --batch-size 32 --lr 0.1 --dry-
 ![Docker Layers 1](docker-layers-1.png)
 ![Docker Layers 2](docker-layers-2.png)
 
-## Mapping to Learnt Concepts
-- Containerization: Packaging applications with dependencies into isolated environments.
-
-- Docker vs. Singularity:
-
-  - Docker uses layered images, which can be very large.
-
-  - Singularity uses .sif files, which are usually smaller and easier to distribute in HPC environments.
-
-- Dependency Management: Using pip to install dependencies in both systems.
 
 ## Observation and Comparison
 - The image size is relatively large (1.77 GB) due to installing dependencies like PyTorch
@@ -140,3 +130,13 @@ Conv 2
     smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
     --------------------------------------------------- ----------- ------------
 ```
+
+## Mapping to Learnt Concepts
+- Containerization: Packaging applications with dependencies into isolated environments.
+- Docker vs. Singularity:
+
+  - Docker uses layered images, which can be very large.
+
+  - Singularity uses .sif files, which are usually smaller and easier to distribute in HPC environments.
+
+- Dependency Management: Using pip to install dependencies in both systems.
